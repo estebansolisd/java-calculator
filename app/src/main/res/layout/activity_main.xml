@@ -30,7 +30,9 @@
         app:layout_constraintEnd_toStartOf="@+id/btnTwo"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:tag="1"
+    />
 
     <Button
         android:onClick="handleClick"
@@ -41,7 +43,8 @@
         android:layout_marginTop="20dp"
         android:text="@string/btnClear"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSeven" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSeven"
+    />
 
     <Button
         android:onClick="handleClick"
@@ -52,7 +55,9 @@
         android:layout_marginTop="20dp"
         android:text="@string/btnZero"
         app:layout_constraintStart_toEndOf="@+id/btnClear"
-        app:layout_constraintTop_toBottomOf="@+id/btnEight" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEight"
+        android:tag="0"
+    />
 
     <Button
         android:id="@+id/btnEqual"
@@ -76,7 +81,9 @@
         android:layout_marginTop="16dp"
         android:text="@string/btnEight"
         app:layout_constraintStart_toEndOf="@+id/btnSeven"
-        app:layout_constraintTop_toBottomOf="@+id/btnFive" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFive"
+        android:tag="8"
+    />
 
     <Button
         android:onClick="handleClick"
@@ -87,7 +94,9 @@
         android:layout_marginTop="8dp"
         android:text="@string/btnFive"
         app:layout_constraintStart_toEndOf="@+id/btnFour"
-        app:layout_constraintTop_toBottomOf="@+id/btnTwo" />
+        app:layout_constraintTop_toBottomOf="@+id/btnTwo"
+        android:tag="5"
+    />
 
     <Button
         android:onClick="handleClick"
@@ -98,7 +107,9 @@
         android:layout_marginEnd="16dp"
         android:text="@string/btnTwo"
         app:layout_constraintEnd_toStartOf="@+id/btnThree"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:tag="2"
+    />
 
     <Button
         android:onClick="handleClick"
@@ -109,7 +120,9 @@
         android:layout_marginEnd="36dp"
         android:text="@string/btnThree"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:tag="3"
+    />
 
     <Button
         android:onClick="handleClick"
@@ -122,7 +135,9 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btnFive"
-        app:layout_constraintTop_toBottomOf="@+id/btnThree" />
+        app:layout_constraintTop_toBottomOf="@+id/btnThree"
+        android:tag="6"
+    />
 
     <Button
         android:onClick="handleClick"
@@ -135,7 +150,9 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btnEight"
-        app:layout_constraintTop_toBottomOf="@+id/btnSix" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSix"
+        android:tag="9"
+    />
 
     <Button
         android:onClick="handleClick"
@@ -146,7 +163,9 @@
         android:layout_marginTop="4dp"
         android:text="@string/btnSum"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:tag="sum"
+    />
 
     <Button
         android:onClick="handleClick"
@@ -157,7 +176,9 @@
         android:layout_marginTop="16dp"
         android:text="@string/btnDiv"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/btnMul" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMul"
+        android:tag="div"
+    />
 
     <Button
         android:onClick="handleClick"
@@ -168,7 +189,9 @@
         android:layout_marginTop="20dp"
         android:text="@string/btnMul"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/btnSub" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSub"
+        android:tag="mul"
+    />
 
     <Button
         android:onClick="handleClick"
@@ -179,7 +202,9 @@
         android:layout_marginTop="20dp"
         android:text="@string/btnSub"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/btnSum" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSum"
+        android:tag="sub"
+    />
 
     <Button
         android:onClick="handleClick"
@@ -190,11 +215,12 @@
         android:layout_marginTop="16dp"
         android:text="@string/btnSeven"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFour" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFour"
+        android:tag="7"
+    />
 
     <Button
         android:onClick="handleClick"
-
         android:id="@+id/btnFour"
         android:layout_width="59dp"
         android:layout_height="42dp"
@@ -202,7 +228,9 @@
         android:layout_marginTop="8dp"
         android:text="@string/btnFour"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnOne" />
+        app:layout_constraintTop_toBottomOf="@+id/btnOne"
+        android:tag="4"
+    />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
